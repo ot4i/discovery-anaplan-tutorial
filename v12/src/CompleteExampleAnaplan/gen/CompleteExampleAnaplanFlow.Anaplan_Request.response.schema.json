@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "fileContent": {
+      "displayOrder": 13,
+      "title": "File content",
+      "description": "The content of the file",
+      "type": "string"
+    }
+  },
+  "title": "file",
+  "additionalProperties": false
+}

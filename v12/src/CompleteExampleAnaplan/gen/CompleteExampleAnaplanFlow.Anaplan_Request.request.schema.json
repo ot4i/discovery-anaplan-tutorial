@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "fileType": {
+      "displayOrder": 11,
+      "title": "Content type",
+      "description": "The content type of the file",
+      "enum": [
+        "Text",
+        "Binary"
+      ],
+      "type": "string"
+    }
+  },
+  "title": "file",
+  "required": [
+    "fileType"
+  ],
+  "additionalProperties": false,
+  "connectorName": "anaplan",
+  "interaction": "DOWNLOADFILECONTENT"
+}

@@ -25,8 +25,11 @@
       <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="432,27">
         <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
       </nodes>
-      <nodes xmi:type="ComIbmApplicationConnectorRequest_anaplan.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="450,91" applicationConnectorType="anaplan">
+      <nodes xmi:type="ComIbmApplicationConnectorRequest_anaplan.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="450,91" applicationConnectorType="anaplan" action="DOWNLOADFILECONTENT" businessObject="file" displayName="Download file content" schemaPrefix="gen/CompleteExampleAnaplanFlow.Anaplan_Request" policyUrl="{CompletePolicyProjectAnaplan}:Anaplan1" messageSetProperty="gen/CompleteExampleAnaplanFlow.Anaplan_Request.response.schema.json">
         <translation xmi:type="utility:ConstantString" string="Anaplan Request"/>
+        <connectorProperty propertyName="id" displayName="file" propertyValue="113000000002"/>
+        <connectorProperty propertyName="modelID" displayName="Model" propertyValue="76397A39B3C443EAB2EFB38F123D352D"/>
+        <connectorProperty propertyName="workspaceID" displayName="Workspace" propertyValue="8a868cdd7d906ca9017db500f04e39d1"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_4" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.first" targetTerminalName="InTerminal.in"/>
